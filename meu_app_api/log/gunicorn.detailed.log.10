@@ -1,0 +1,58 @@
+[2023-09-05 22:32:39,286] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:32:39] "OPTIONS /login HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:32:39,372] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:32:39] "POST /login HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:32:41,142] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:32:41] "OPTIONS /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:32:41,186] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:32:41] "POST /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:33:29,973] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:33:29] "OPTIONS /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:33:29,989] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:33:29] "POST /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:34:00,148] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:34:00] "OPTIONS /login HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:34:00,160] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:34:00] "POST /login HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:34:03,675] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:34:03] "OPTIONS /por-categoria HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:34:03,696] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:34:03] "POST /por-categoria HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:34:33,281] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:34:33] "OPTIONS /login HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:34:33,297] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:34:33] "POST /login HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:34:37,129] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:34:37] "OPTIONS /por-categoria HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:34:37,142] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:34:37] "POST /por-categoria HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:34:49,437] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:34:49] "OPTIONS /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:34:49,455] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:34:49] "POST /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:35:49,687] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:35:49] "OPTIONS /login HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:35:49,699] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:35:49] "POST /login HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:35:51,331] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:35:51] "OPTIONS /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:35:51,346] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:35:51] "POST /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:35:54,926] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:35:54] "OPTIONS /por-categoria HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:35:54,948] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:35:54] "POST /por-categoria HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:35:57,806] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:35:57] "OPTIONS /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:35:57,828] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:35:57] "POST /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:36:43,372] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:36:43] "OPTIONS /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:36:43,388] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:36:43] "POST /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:36:58,192] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:36:58] "OPTIONS /por-categoria HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:36:58,204] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:36:58] "POST /por-categoria HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:37:29,051] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.229:5000 (Press CTRL+C to quit) - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:37:30,377] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:37:30] "OPTIONS /por-categoria HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:37:30,507] ERROR log_exception() L1449 Exception on /por-categoria [POST] - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\app.py", line 297, in get_consultaPorCategoria
+    return {"historicos": apresenta_historicos(categorias)}, 200
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\schemas\historico.py", line 39, in apresenta_historicos
+    return [apresenta_historico(historico) for historico in historicos]
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\schemas\historico.py", line 39, in <listcomp>
+    return [apresenta_historico(historico) for historico in historicos]
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\schemas\historico.py", line 34, in apresenta_historico
+    "nome": historico.usuario_obj.nome
+AttributeError: 'NoneType' object has no attribute 'nome'
