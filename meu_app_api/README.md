@@ -33,3 +33,25 @@ automaticamente após uma mudança no código fonte.
 ```
 
 Abra o [http://localhost:5000/#/](http://localhost:5000/#/) no navegador para verificar o status da API em execução.
+
+
+
+## Como executar através do Docker
+
+Certifique-se de ter o [Docker] (https://docs.docker.com/engine/install/) instalado e em execução em sua máquina.
+
+Navegue até o diretório que contém o Dockerfile no terminal.
+Execute **como administrador** o seguinte comando para construir a imagem Docker:
+
+```
+$ docker build -t back-quiz .
+```
+
+Uma vez criada a imagem, para executar o container basta executar, **como administrador**, o seguinte comando:
+
+```
+$ sudo docker run -p 5000:5000 back-quiz
+```
+
+Uma vez executando, para acessar o front-end, basta abrir o [http://localhost:5000/#/](http://localhost:5000/#/) no navegador.
+

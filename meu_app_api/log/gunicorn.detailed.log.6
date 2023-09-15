@@ -1,4 +1,4 @@
-[2023-09-05 22:57:56,770] ERROR log_exception() L1449 Exception on /por-categoria [POST] - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py L1449
+[2023-09-05 22:59:11,739] ERROR log_exception() L1449 Exception on /por-categoria [POST] - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py L1449
 Traceback (most recent call last):
   File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
@@ -21,13 +21,13 @@ Traceback (most recent call last):
   File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\schemas\historico.py", line 39, in <listcomp>
     return [apresenta_historico(historico) for historico in historicos]
   File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\schemas\historico.py", line 34, in apresenta_historico
-    "nome": historico.usuario_obj.nome
-AttributeError: 'NoneType' object has no attribute 'nome'
-[2023-09-05 22:57:56,866] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:57:56] "[35m[1mPOST /por-categoria HTTP/1.1[0m" 500 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:58:00,183] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:58:00] "OPTIONS /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:58:00,201] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:58:00] "POST /por-usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:58:02,957] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:58:02] "OPTIONS /por-categoria HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:58:02,971] ERROR log_exception() L1449 Exception on /por-categoria [POST] - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py L1449
+    "nome": historico.usuario.nome
+AttributeError: 'int' object has no attribute 'nome'
+[2023-09-05 22:59:11,833] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:59:11] "[35m[1mPOST /por-categoria HTTP/1.1[0m" 500 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:59:16,310] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:59:16] "OPTIONS /login HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:59:16,336] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:59:16] "POST /login HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:59:21,890] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:59:21] "OPTIONS /por-categoria HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 22:59:21,902] ERROR log_exception() L1449 Exception on /por-categoria [POST] - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py L1449
 Traceback (most recent call last):
   File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
@@ -50,37 +50,27 @@ Traceback (most recent call last):
   File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\schemas\historico.py", line 39, in <listcomp>
     return [apresenta_historico(historico) for historico in historicos]
   File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\schemas\historico.py", line 34, in apresenta_historico
-    "nome": historico.usuario_obj.nome
-AttributeError: 'NoneType' object has no attribute 'nome'
-[2023-09-05 22:58:02,981] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:58:02] "[35m[1mPOST /por-categoria HTTP/1.1[0m" 500 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:58:07,088] ERROR log_exception() L1449 Exception on /por-categoria [POST] - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py L1449
-Traceback (most recent call last):
-  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 1503, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
-    resp = _do_wrapper(
-  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
-    response = func(**request_kwargs)
-  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\app.py", line 297, in get_consultaPorCategoria
-    return {"historicos": apresenta_historicos(categorias)}, 200
-  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\schemas\historico.py", line 39, in apresenta_historicos
-    return [apresenta_historico(historico) for historico in historicos]
-  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\schemas\historico.py", line 39, in <listcomp>
-    return [apresenta_historico(historico) for historico in historicos]
-  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\schemas\historico.py", line 34, in apresenta_historico
-    "nome": historico.usuario_obj.nome
-AttributeError: 'NoneType' object has no attribute 'nome'
-[2023-09-05 22:58:07,109] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:58:07] "[35m[1mPOST /por-categoria HTTP/1.1[0m" 500 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:59:10,381] INFO _log() L224   * Running on all addresses (0.0.0.0)
+    "nome": historico.usuario.nome
+AttributeError: 'int' object has no attribute 'nome'
+[2023-09-05 22:59:21,913] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:59:21] "[35m[1mPOST /por-categoria HTTP/1.1[0m" 500 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 23:10:32,215] INFO _log() L224   * Running on all addresses (0.0.0.0)
    WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://127.0.0.1:5000
  * Running on http://10.0.0.229:5000 (Press CTRL+C to quit) - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:59:11,662] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:59:11] "OPTIONS /por-categoria HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 23:10:45,530] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 23:10:45] "OPTIONS /login HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 23:10:45,561] WARNING get_login() L134  Erro ao buscar usuário 'aaa@aa.com', Registro de usuario não encontrado na base :/ - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT 3\COMPONENTE C\meu_app_api\app.py L134 
+[2023-09-05 23:10:45,565] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 23:10:45] "[33mPOST /login HTTP/1.1[0m" 404 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 23:10:50,827] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 23:10:50] "OPTIONS /usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 23:10:50,848] ERROR log_exception() L1449 Exception on /usuario [POST] - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 1520, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 1539, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\flask\app.py", line 1695, in make_response
+    raise TypeError(
+TypeError: The view function for 'add_usuario' did not return a valid response. The function either returned None or ended without a return statement.
+[2023-09-05 23:10:50,858] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 23:10:50] "[35m[1mPOST /usuario HTTP/1.1[0m" 500 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 23:11:01,835] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 23:11:01] "OPTIONS /usuario HTTP/1.1" 200 - - call_trace=C:\Users\Robson\OneDrive\Documentos\PUC\SPRINT_1\MVP\meu_app_api\venv\lib\site-packages\werkzeug\_internal.py L224 
