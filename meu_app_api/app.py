@@ -38,11 +38,15 @@ def add_usuario():
     """
     data = request.json
     usuario = Usuario(
-        nome= data['nome'],
+        nome=data['nome'],
         email=data['email'],
-        senha=data['senha']
-        )
-
+        senha=data['senha'],
+        cep=data['cep'],
+        logradouro=data['logradouro'],
+        bairro=data['bairro'],
+        cidade=data['cidade'],
+        estado=data['estado']
+    )
     try:
         # criando conexão com a base
         session = Session()
@@ -50,6 +54,8 @@ def add_usuario():
         session.add(usuario)
         # efetivando o camando de adição de novo item na tabela
         session.commit()  
+        return {"message": "Usuário adicionado com sucesso!", "usuario": apresenta_usuario(usuario)}, 200
+
 
     except IntegrityError as e:
         # como a duplicidade do nome é a provável razão do IntegrityError
@@ -170,17 +176,12 @@ def del_usuario():
         logger.warning(f"Erro ao deletar registro de usuario #'{usuario_id}', {error_msg}")
         return {"mesage": error_msg}, 404
 
-@app.put('/usuario', tags=[usuario_tag],
-         responses={"200": UsuarioViewSchema, "404": ErrorSchema, "400": ErrorSchema})
+@app.put('/usuario', tags=[usuario_tag], responses={"200": UsuarioViewSchema, "404": ErrorSchema, "400": ErrorSchema})
 def update_usuario():
-    """Atualiza o nome de um usuário baseado em seu ID.
-    
-    Retorna uma representação do usuário atualizado.
-    """
-    # ID e novo nome do usuário a ser atualizado.
+    """Atualiza os detalhes de um usuário baseado em seu ID."""
+    # Dados enviados no pedido.
     data = request.json
     usuario_id = data['id']
-    novo_nome = data['nome']
     
     # Criando uma sessão para se comunicar com o banco de dados.
     session = Session()
@@ -191,19 +192,24 @@ def update_usuario():
     # Se o usuário não for encontrado, retorne um erro.
     if not usuario:
         error_msg = "Usuário não encontrado :/"
-        logger.warning(f"Erro ao atualizar o nome do usuário com ID '{usuario_id}', {error_msg}")
+        logger.warning(f"Erro ao atualizar o usuário com ID '{usuario_id}', {error_msg}")
         return {"message": error_msg}, 404
 
-    # Se o usuário for encontrado, atualize seu nome.
-    usuario.nome = novo_nome
+    # Se o usuário for encontrado, atualize seus detalhes.
+    campos_atualizaveis = ["nome", "cep", "cidade", "estado", "logradouro", "bairro"]
+    for campo in campos_atualizaveis:
+        if campo in data:
+            setattr(usuario, campo, data[campo])
+    
     try:
         session.commit()
-        logger.debug(f"Nome do usuário com ID '{usuario_id}' atualizado com sucesso.")
+        logger.debug(f"Detalhes do usuário com ID '{usuario_id}' atualizado com sucesso.")
         return apresenta_usuario(usuario), 200
     except Exception as e:
-        error_msg = "Erro ao atualizar o nome do usuário."
-        logger.error(f"Erro ao atualizar o nome do usuário com ID '{usuario_id}', {error_msg}")
+        error_msg = "Erro ao atualizar os detalhes do usuário."
+        logger.error(f"Erro ao atualizar os detalhes do usuário com ID '{usuario_id}', {error_msg}")
         return {"message": str(e)}, 400
+
 
 
 @app.post('/historico', tags=[historico_tag],

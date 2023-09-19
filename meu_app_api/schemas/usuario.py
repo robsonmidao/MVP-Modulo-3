@@ -12,6 +12,11 @@ class UsuarioSchema(BaseModel):
     nome: str 
     email: str
     senha: str 
+    cep: str
+    logradouro: str
+    bairro: str
+    cidade: str
+    estado: str
    
 
 class UsuarioBuscaSchema(BaseModel):
@@ -45,6 +50,11 @@ class UsuarioSchemaUpdate(BaseModel):
     """
     id: int 
     nome: str 
+    cep: str
+    cidade: str
+    estado: str
+    logradouro:str
+    bairro: str
         
 class ListagemUsuarioSchema(BaseModel):
     """ Define como uma listagem de registro de usuário será retornada.
@@ -62,7 +72,12 @@ def apresenta_usuarios(usuarios: List[Usuario]):
             "id": usuario.id,
             "nome": usuario.nome,
             "email": usuario.email,
-            "senha": usuario.senha,            
+            "senha": usuario.senha,
+            "cep": usuario.cep,
+            "logradouro": usuario.logradouro,
+            "bairro": usuario.bairro,
+            "cidade": usuario.cidade,
+            "estado": usuario.estado            
         })
 
     return {"usuarios": result}
@@ -75,7 +90,12 @@ class UsuarioViewSchema(BaseModel):
     nome: str 
     email: str 
     senha: str 
-    historicos:List[UsuarioSchema]
+    cep: str
+    logradouro: str
+    bairro: str
+    cidade: str
+    estado: str
+    historicos: List[UsuarioSchema]
 
 class HistoricoViewSchema(BaseModel):
     """ Define como um usuário será retornado: usuário + histórico.
@@ -100,6 +120,15 @@ def apresenta_usuario(usuario: Usuario):
         UsuarioViewSchema.
     """
     return {    
+        "id": usuario.id,
+        "nome": usuario.nome,
+        "email": usuario.email,
+        "senha": usuario.senha,
+        "cep": usuario.cep,
+        "logradouro": usuario.logradouro,
+        "bairro": usuario.bairro,
+        "cidade": usuario.cidade,
+        "estado": usuario.estado,
         "historicos": [{"categoria": c.categoria, "score": c.score, "data": c.data_insercao} for c in usuario.historicos]
     }
 
